@@ -88,3 +88,11 @@ function executeWork(employee: Director | Teacher): string {
   }
   return employee.workTeacherTasks();
 }
+
+
+// task_2/js/main.ts
+type Subjects = 'Math' | 'History';
+
+function teachClass(todayClass: Subjects): string {
+  return `Teaching ${todayClass}`;
+}
