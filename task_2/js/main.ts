@@ -76,3 +76,15 @@ console.log(executeWork(createEmployee(1000))); // Getting to director tasks
 
 console.log(teachClass('Math')); // Teaching Math
 console.log(teachClass('History')); // Teaching History
+
+// task_2/js/main.ts
+function isDirector(employee: Director | Teacher): employee is Director {
+  return (employee as Director).workDirectorTasks !== undefined;
+}
+
+function executeWork(employee: Director | Teacher): string {
+  if (isDirector(employee)) {
+    return employee.workDirectorTasks();
+  }
+  return employee.workTeacherTasks();
+}
