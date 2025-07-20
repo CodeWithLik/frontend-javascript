@@ -64,3 +64,8 @@ console.log(printTeacher('John', 'Doe'));
 const student = new StudentClass('Alice', 'Smith');
 console.log(student.displayName());
 console.log(student.workOnHomework());
+
+// task_1/js/main.ts
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
