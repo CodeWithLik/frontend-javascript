@@ -1,0 +1,15 @@
+{
+  "name": "task_4",
+  "version": "1.0.0",
+  "description": "TypeScript Namespace & Declaration Merging",
+  "main": "js/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node js/main.js"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.4.0",
+    "@typescript-eslint/parser": "^2.4.0",
+    "typescript": "^3.6.4"
+  }
+}
