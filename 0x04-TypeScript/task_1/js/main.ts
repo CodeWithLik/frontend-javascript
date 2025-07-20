@@ -69,3 +69,12 @@ console.log(student.workOnHomework());
 interface Directors extends Teacher {
   numberOfReports: number;
 }
+
+// task_1/js/main.ts
+interface printTeacherFunction {
+  (firstName: string, lastName: string): string;
+}
+
+const printTeacher: printTeacherFunction = (firstName, lastName) => {
+  return `${firstName[0]}. ${lastName}`;
+};
